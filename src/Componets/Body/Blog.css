@@ -1,0 +1,112 @@
+.blog_svg {
+  width: calc(100% + 1.3px);
+  height: 51px;
+}
+.blog_main {
+  padding: 100px 0;
+}
+.blog_mainTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.blog_mainTopHeading {
+  color: #233d63;
+  font-size: 44px;
+  font-weight: 600;
+}
+.blog_mainTopDetail {
+  text-align: center;
+  color: #8796ac;
+  font-size: 16px;
+  font-weight: 300;
+  width: 50vw;
+}
+.blog_mainBottom {
+  display: flex;
+  padding-left: 35px;
+  margin-right: -15px;
+}
+.blog_mainBottomCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 1px rgba(176, 176, 176, 0.3);
+  padding: 35px 30px;
+  margin-right: 50px;
+  position: relative;
+}
+.blog_mainBottomCardImg {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px 0 0;
+}
+.blog_mainBottomCardTitle {
+  padding-top: 50%;
+  margin-top: 30%;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #233d63;
+  line-height: 1.2;
+}
+.blog_mainBottomCardDetail {
+  color: #8796ac;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 10px;
+  margin-bottom: 0px;
+}
+.blog_mainBottomCardButton {
+  border: transparent;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ffbe56;
+  border-style: solid;
+  border-radius: 40px;
+  padding: 7px 25px;
+  margin: 10px 10px;
+}
+@media (max-width: 900px) {
+  .blog_main {
+    padding: 50px 0;
+  }
+  .blog_mainTopHeading {
+    font-size: 38px;
+  }
+  .blog_mainTopDetail {
+    font-size: 14px;
+    width: 90vw;
+  }
+  .blog_mainBottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog_mainBottomCard {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .blog_mainTopHeading {
+    font-size: 30px;
+  }
+  .blog_mainTopDetail {
+    font-size: 12px;
+  }
+  .blog_mainBottomCardTitle {
+    font-size: 20px;
+  }
+}
